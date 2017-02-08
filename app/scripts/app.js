@@ -29,10 +29,10 @@ angular
         controller: 'AboutCtrl',
         controllerAs: 'about'
       })
-      .when('/Gallery', {
+      .when('/gallery', {
         templateUrl: 'views/gallery.html',
         controller: 'GalleryCtrl',
-        controllerAs: 'Gallery'
+        controllerAs: 'gallery'
       })
       .otherwise({
         redirectTo: '/'
