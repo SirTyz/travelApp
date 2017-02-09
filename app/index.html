@@ -14,9 +14,14 @@
     <!-- build:css(.tmp) styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
-
+    <!-- jquery request -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- endbuild -->
+    <!-- header Image fade-in effect -->
+    <script src="../scripts/imageFader.js"></script>
     <!--font sheets-->
     <link href="https://fonts.googleapis.com/css?family=Fugaz+One" rel="stylesheet">
+    <!-- endbuild -->
   </head>
   <body ng-app="travelAppApp">
     <!--[if lte IE 8]>
@@ -51,13 +56,6 @@
             </ul>
           </div>
         </div>
-        <div class="header-image">
-          <div class="header-image-filter"></div>
-          <p class="greeting">Reykjavik!</p>
-        </div>
-      </div>
-    </div>
-
     <div class="container">
     <div ng-view=""></div>
     </div>
