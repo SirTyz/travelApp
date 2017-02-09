@@ -34,11 +34,6 @@ angular
         controller: 'GalleryCtrl',
         controllerAs: 'gallery'
       })
-      .when('/cart', {
-        templateUrl: 'views/cart.html',
-        controller: 'CartCtrl',
-        controllerAs: 'cart'
-      })
       .otherwise({
         redirectTo: '/'
       });
