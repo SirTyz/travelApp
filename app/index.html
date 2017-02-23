@@ -22,48 +22,90 @@
     <!--font sheets-->
     <link href="https://fonts.googleapis.com/css?family=Fugaz+One" rel="stylesheet">
     <!-- endbuild -->
+    <!--Maps-->
+    <!--endbuild-->
   </head>
   <body ng-app="travelAppApp">
     <!--[if lte IE 8]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
+  <div id="page-wrapper">
+        <!-- Add your site or application content here -->
 
-    <!-- Add your site or application content here -->
-    <div class="header">
-      <div class="navbar navbar-default" role="navigation">
-        <div class="container nav-container">
-          <div class="navbar-header">
+        <div class="container">
+        <div ng-view=""></div>
+        </div>
 
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#js-navbar-collapse">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-
-            <a class="navbar-brand" href="#/">travelApp</a>
-          </div>
-
-          <div class="collapse navbar-collapse" id="js-navbar-collapse">
-
-            <ul class="nav navbar-nav">
-              <li><a href="#/">Home</a></li>
-              <li><a ng-href="#!/about">About</a></li>
-              <li><a ng-href="#!/contact">Contact</a></li>
-              <li><a ng-href="#!/gallery">Gallery</a></li>
-            </ul>
+        <div id="footer">
+        <div class="container">
+          <div class="row">
+            <section class="3u 6u(narrower) 12u$(mobilep)">
+              <h3>Regional Travel Sites</h3>
+              <ul class="links">
+                <li><a href="#">West Iceland</a></li>
+                <li><a href="#">Westfjords</a></li>
+                <li><a href="#">North Iceland</a></li>
+                <li><a href="#">East Iceland</a></li>
+                <li><a href="#">South Iceland</a></li>
+                <li><a href="#">Reykjanes</a></li>
+              </ul>
+            </section>
+            <section class="3u 6u$(narrower) 12u$(mobilep)">
+              <h3>Attractions</h3>
+              <ul class="links">
+                <li><a href="#">Summer in Reykjavík</a></li>
+                <li><a href="#">Places of Interest</a></li>
+                <li><a href="#">Museums and Galleries</a></li>
+                <li><a href="#">Nature Within the City</a></li>
+              </ul>
+            </section>
+            <section class="6u 12u(narrower)">
+              <h3>Get In Touch</h3>
+              <form>
+                <div class="row 50%">
+                  <div class="6u 12u(mobilep)">
+                    <input type="text" name="name" id="name" placeholder="Name" />
+                  </div>
+                  <div class="6u 12u(mobilep)">
+                    <input type="email" name="email" id="email" placeholder="Email" />
+                  </div>
+                </div>
+                <div class="row 50%">
+                  <div class="12u">
+                    <textarea name="message" id="message" placeholder="Message" rows="5"></textarea>
+                  </div>
+                </div>
+                <div class="row 50%">
+                  <div class="12u">
+                    <ul class="actions">
+                      <li><input type="submit" class="button alt" value="Send Message" /></li>
+                    </ul>
+                  </div>
+                </div>
+              </form>
+            </section>
           </div>
         </div>
-    <div class="container">
-    <div ng-view=""></div>
-    </div>
 
-    <div class="footer">
-      <div class="container">
-        <p><span class="glyphicon glyphicon-heart"></span> from the Yeoman team</p>
+        <!-- Icons -->
+          <ul class="icons">
+            <li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+            <li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+            <li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+            <li><a href="#" class="icon fa-youtube"><span class="label">YouTube</span></a></li>
+          </ul>
+
+        <!-- Copyright -->
+          <div class="copyright">
+            <ul class="menu">
+              <li>&copy; Untitled. All rights reserved</li><li>Design: <a href="http://html5up.net">Reykjavík</a></li>
+            </ul>
+          </div>
+
+      </div>
       </div>
     </div>
-
+  </div>
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
      <script>
@@ -96,5 +138,12 @@
         <script src="scripts/controllers/about.js"></script>
         <script src="scripts/controllers/gallery.js"></script>
         <!-- endbuild -->
+
+        <script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
 </body>
 </html>

@@ -1,1 +1,67 @@
-<p>This is the about view.</p>
+<div id="header">
+
+<!-- Nav -->
+<nav id="nav">
+	<div class="navBreakLeft"></div>
+	<ul>
+		<li><a href="index.html">Home</a></li>
+		<li><a href="#!/about">About</a></li>
+		<li><a href="#!/gallery">Gallery</a></li>
+	</ul>
+</nav>
+
+</div>
+	<!-- Main -->
+		<section class="wrapper style1">
+			<div class="container">
+				<div class="row 200%">
+					<div class="4u 12u(narrower)">
+						<div id="sidebar">
+
+							<!-- Sidebar -->
+
+								<section id="twitterDiv">
+									<a class="twitter-timeline" href="https://twitter.com/visitreykjavik">Tweets by TwitterDev</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+								</section>
+
+						</div>
+					</div>
+					<div class="8u  12u(narrower) important(narrower)">
+						<div id="content">
+
+							<!-- Content -->
+
+								<article>
+									<header class="aboutImage">
+										<h2>About Us</h2>
+									</header>
+
+									<h2>Our Favorite City!</h2>
+									<p>Whatever the reason for your stay, we at Visit Reykjavík are very proud to be of service to all our guests and look forward to sharing the best of the winter season with you here in Reykjavík city – where countless adventures beckon and a host of wonders await!</p>
+
+									<p>It's been an exceptional time for tourism in Iceland, with annual estimated figures showing about 20% increase in the number of visitors over the last few years, the majority of whom also visit Reykjavík. This increase, especially in the off-season, has been met with both enthusiasm and innovation in the city as local institutions and businesses come together to serve this growing sector and to create new and exciting ways to entertain and engage visitors to the city.</p>
+
+									<div id="map"></div>
+								 <script>
+									 function initMap() {
+										 var uluru = {lat: 64.126670, lng: -21.8174};
+										 var map = new google.maps.Map(document.getElementById('map'), {
+											 zoom: 12,
+											 center: uluru
+										 });
+										 var marker = new google.maps.Marker({
+											 position: uluru,
+											 map: map
+										 });
+									 }
+								 </script>
+								 <script async defer
+								 src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBoy49YBdeNvcOn0TXAe8dMunmQ2DmJzks&callback=initMap">
+								 </script>
+								</article>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
